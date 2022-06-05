@@ -1,1 +1,1 @@
-# This repo contains Yuewen's portfolio and SPS projects.
+# 🌟 Yuewen's portfolio and SPS projects.
