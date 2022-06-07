@@ -2,7 +2,7 @@
 /* font-family: 'Charis SIL', serif;
 font-family: 'Joan', serif; */
 body{
-  
+  word-wrap: break-word;
   background-color: #b995a4;
   
 }
@@ -78,7 +78,7 @@ a:hover{
 }
 
 #character{
-  position:absolute;
+  position:fixed;
   width: 30%;
   height:100%;
   top:0px;
