@@ -4,6 +4,7 @@ font-family: 'Joan', serif; */
 body{
   
   background-color: #b995a4;
+  
 }
 #prelude{
   background-color: #050405;
@@ -51,6 +52,9 @@ h1{
   color:#644954;
 }
 
+#bulb-image{
+  object-fit: cover;
+}
 
 
 #greeting-container {
@@ -65,10 +69,11 @@ h1{
   height: 600px;
 
 }
-#bulb:hover{
-  background-color: #b995a4;
+a:hover{
+  /* background-color: #b995a4; */
   /* background-image: linear-gradient(rgb(247, 195, 195), rgb(243, 243, 223)); */
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>💡</text></svg>") 16 0,auto; 
+  /* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>💡</text></svg>")  0,auto; */
+  cursor: url(images/light-cursor.png)  10 10 ,auto;
 
 }
 
