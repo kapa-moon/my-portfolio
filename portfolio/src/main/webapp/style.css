@@ -1,9 +1,91 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+
+/* font-family: 'Charis SIL', serif;
+font-family: 'Joan', serif; */
+body{
+  
+  background-color: #b995a4;
 }
+#prelude{
+  background-color: #050405;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+ }
+p{
+  font-family: 'Joan', serif;
+  color:#2c1921;
+  ;
+}
+h1{
+  font-family: 'Charis SIL', serif;
+  color: #36272d;
+}
+.items{
+  position: relative;
+  left: 100px;
+  font-family: 'Joan', serif;
+  padding: 0px;
+  
+  width: fit-content;
+
+}
+.items:hover{
+  /* background-color: #404B69; */
+  background-image: linear-gradient(rgb(247, 195, 195), rgb(243, 243, 223));
+  
+}
+#main-content {
+  
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 400px;
+  height: 1024px;
+  background-color:#b995a4;
+  z-index: 2;
+}
+
+#haruki{
+  color:#644954;
+}
+
+
 
 #greeting-container {
   margin-top: 20px;
 }
+
+#bulb{
+  position: absolute;
+  right: 5%;
+  border-radius: 20%;
+  width: 400px;
+  height: 600px;
+
+}
+#bulb:hover{
+  background-color: #b995a4;
+  /* background-image: linear-gradient(rgb(247, 195, 195), rgb(243, 243, 223)); */
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>💡</text></svg>") 16 0,auto; 
+
+}
+
+#character{
+  position:absolute;
+  width: 30%;
+  height:100%;
+  top:0px;
+  right:0px;
+  z-index: 1;
+}
+
+#walk{
+  position: absolute;
+  bottom: 2px;
+  width: 400px;
+  height: 600px;
+  left: 20%;
+}
+
