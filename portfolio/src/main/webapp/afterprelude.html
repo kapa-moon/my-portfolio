@@ -19,7 +19,7 @@
     <div id="main-content">
       <h1>Welcome to Kapa's STAGE</h1>
       <div id="self-intro">
-        <h2>Yuewen Yang</h2>
+        <h2>Hi, I'm Yuewen.</h2>
         <p>A want-to-be designer and dreamer, <span id="student">a must-be student</span>
            maybe a programmer. </p>
         <p>
@@ -31,24 +31,30 @@
       </div>
       <div>
         <p>Recently, I'm a fan of</p>
+        <button class="itembtn" onclick=" location.href='music.html'" type="button">
+          Hikaru Utada</button>
         <div class="items">
-          <p>Hikaru Utada</p>
-          <a href="music.html"><p>Hikaru Utada</p></a>
-        </div>
-        <div class="items">
-          <p>Haruki Murakami</p>
+          <p style="font-size:large ;">Haruki Murakami</p>
           <p id="haruki">As I run I tell myself to think of a river. And clouds. But essetially I'm not thinking of a thing. All I do is keep on running in my own cozy, homemade void, my own nostalgic silence.
             And this is a pretty wonderful thing.</p>
         </div>
-        <div class="items">
-          <p>OpenAI DALL·E 2</p>
-        </div>
+        <button class="itembtn" onclick=" location.href='https://openai.com/dall-e-2/'" type="button">
+          OpenAI DALL·E 2</button>
       </div>
       
     </div>
     <div id="character">
       <img src="images/zone.png">
     </div>
+
+    <form action="/form-handler" method="POST">
+      <p>Enter some text here:</p>
+      <textarea name="text-input">hello world</textarea>
+      <br/>
+      <input type="submit" />
+    </form>
+
+    <script src="script.js"></script>
     
   </body>
 </html>
