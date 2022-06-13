@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,21 +12,40 @@
 
     <script src="script.js"></script>
   </head>
-  <body id="prelude">
+  <body>
     <!-- <div id="embed-iframe"></div> -->
+    <style>
+    body {
+        background: linear-gradient(-45deg, #8a6d7a, #b995a4, #000000, #312027);
+        background-size: 400% 400%;
+        -webkit-animation: gradient 15s ease infinite;
+                animation: gradient 15s ease infinite;
+    }
     
-    <div id="bulb">
-
-        <a href="afterprelude.html"> 
-            <img id="bulb-image"
-            src="images/bulb.png">
-        </a>
-        
-        <!-- <img src="images/bulb.png"  alt="BULB" onclick="index.html"> -->
-    </div>
-    <div id="walk">
-        <img src="images/walk.png"
-    </div>
+    @-webkit-keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }</style>
+    <iframe style="border-radius:12px;  top: 200px; z-index: 100;" src="https://open.spotify.com/embed/playlist/6rXHCyu3F5anw11ar3wsrz?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
     <script type="text/javascript">
       window.onSpotifyIframeApiReady = (IFrameAPI) => {
