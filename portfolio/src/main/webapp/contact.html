@@ -14,26 +14,26 @@
       </head>
   <nav>
     <ul>
-      <li><a href="afterprelude.html">Main Stage</a></li>
+      <li><a href="afterprelude.html">Back to Main Stage</a></li>
     </ul>
   </nav>
   <body>
     <div id="contact">
-        <form action="/form-handler" method="POST">
+        <form action="/form-handler" method="POST" class = "contact">
             <p> Your name </p>
-            <input type="text" name="name-input"/>
+            <input class = "contact" type="text" name="name-input"/>
             <br/>
             
             <p>Messages</p>
-            <textarea name="text-input"></textarea>
+            <textarea class = "contact" name="text-input"></textarea>
             <br/>
 
             <p> Your email</p>
-            <input type="email" name="email-input"/>
+            <input class = "contact" type="email" name="email-input"/>
             <br/>
             <br/>
             
-            <button type="submit"> 
+            <button id = "submitbtn" type="submit"> 
                 Submit
             </button>
           </form>

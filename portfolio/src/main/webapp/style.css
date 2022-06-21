@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 /* font-family: 'Charis SIL', serif;
 font-family: 'Joan', serif; */
 /* color group
@@ -29,7 +31,8 @@ a:link,a:visited{
 }
 body{
   word-wrap: break-word;
-  background-color: #b995a4;
+  /* background-color: #b995a4; */
+  background-color:#d1adbc;
   
 }
 nav{
@@ -71,6 +74,17 @@ h2{
   color:#36272d
 }
 
+h3{
+  font-family: 'Charis SIL', serif;
+  color: #36272d;
+}
+
+textarea {
+  resize: none;
+  width: 200px;
+  height: 70px;
+}
+
 .itembtn{
   background-color: #b995a4;
   color:#2c1921;
@@ -110,12 +124,39 @@ h2{
 #main-content {
   
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 200px;
   width: 400px;
-  height: 1024px;
-  background-color:#b995a4;
+  height: 600px;
+  /* background-color:#b995a4; */
+  background-color:#d1adbc;
   z-index: 2;
+  margin-left: auto;
+}
+#contact {
+  font-family: "Google Sans", "Roboto", "San Francisco", sans-serif;
+  margin-left: 400px;
+  padding: 80px;
+  width: 650px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: left;
+  position: absolute;
+  top: 1000px;
+  left: 230px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.contact{
+  border-radius: 3px;
+}
+
+#submitbtn{
+  border-radius: 5px;
+  border: none;
+  color:#2c1921;
+  background-color: beige;
 }
 
 #haruki{
@@ -184,18 +225,4 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
 } */
-
-#contact {
-  font-family: "Google Sans", "Roboto", "San Francisco", sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
