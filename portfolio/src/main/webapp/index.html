@@ -2,18 +2,101 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Prelude</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/moonfavi.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Joan&display=swap" rel="stylesheet"> 
+
     <script src="script.js"></script>
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+  <body id="prelude">
+    <!-- <div id="embed-iframe"></div> -->
+    
+    <div id="bulb">
+
+        <a id="bulblink" href="afterprelude.html"> 
+            <img id="bulb-image"
+            src="images/bulb.png">
+        </a>
+        
+        <!-- <img src="images/bulb.png"  alt="BULB" onclick="index.html"> -->
     </div>
+    <div id="walk">
+        <img src="images/walk.png"
+    </div>
+    <button onclick=refresh() style="color: white;">
+      <div id="btn-txt">Change a Emoji</div>
+    </button>
+    <script>
+      function refresh() {
+        window.open("fun.html", "_self");
+      }
+      function snow() {
+
+  var flake = document.createElement('div');
+
+    let get_rand_emoji = function(){
+
+        // let emoji_dict = ['❄️','🌔','😋','🤩','🤯','🤤']
+        let emoji_dict = ['❄️','🌟']
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        return emoji_dict[getRndInteger(0, emoji_dict.length-1)]
+    }
+
+  flake.innerHTML = get_rand_emoji();
+  flake.style.cssText = 'position:absolute;color:lightgray;';
+
+
+  var documentHieght = window.innerHeight;
+
+  var documentWidth = window.innerWidth;
+ 
+  var millisec =10;
+
+  setInterval(function() { 
+  var startLeft = Math.random() * documentWidth;
+
+  var endLeft = Math.random() * documentWidth;
+
+  var flakeSize = 3 + 20 * Math.random();
+
+  var durationTime = 4000 + 7000 * Math.random();
+
+  var startOpacity = 0.7 + 0.3 * Math.random();
+
+  var endOpacity = 0.2 + 0.2 * Math.random();
+
+  var cloneFlake = flake.cloneNode(true);
+
+  cloneFlake.style.cssText += `
+  left: ${startLeft}px;
+  opacity: ${startOpacity};
+  font-size:${flakeSize}px;
+  top:-25px;
+    transition:${durationTime}ms;`;
+
+  document.body.appendChild(cloneFlake);
+
+  setTimeout(function() {
+
+  cloneFlake.style.cssText += `
+    left: ${endLeft}px;
+    top:${documentHieght}px;
+    opacity:${endOpacity};`;
+
+  setTimeout(function() {
+  cloneFlake.remove();
+  }, durationTime);
+  }, 0);
+
+  }, millisec);
+}
+snow();
+
+    </script>
   </body>
 </html>
